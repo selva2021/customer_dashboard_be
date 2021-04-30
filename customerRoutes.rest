@@ -1,0 +1,45 @@
+
+### Customer routs testing
+
+GET http://localhost:3012/customer
+
+
+### Get one customer 
+
+GET http://localhost:3012/customer/60734edf7b1a0956c05bff39
+
+
+### Create Customer 
+
+POST http://localhost:3012/customer
+Content-Type: application/json
+
+{
+    "customer_name":"MuleSoft",
+    "major_change_plan":"nothing planned",
+    "incident_status":"normal",
+    "issue_type":"P2",
+    "status":"In-progress",
+    "p_zero":1,
+    "p_one":1,
+    "p_two":1
+}
+
+
+### Update customer 
+
+PATCH http://localhost:3012/customer/60734edf7b1a0956c05bff39
+Content-Type: application/json
+
+{
+    "customer_name":"HERE Technologies",
+    "major_change_plan":"14 May, Server Upgrade",
+    "incident_status":"Criticle",
+    "issue_type":"P2",
+    "status":"In-progress",
+    "number_of_issues":73
+}
+
+###
+
+DELETE http://localhost:3012/customer/11134ed1111a0956c0511111
