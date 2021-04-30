@@ -1,0 +1,24 @@
+
+### Get Route
+GET http://localhost:3012
+
+
+### Get user by id
+
+GET http://localhost:3012/user/6072923968193f4bd3c3dce5/
+
+### Get all users
+
+GET http://localhost:3012/user
+
+### Create a user
+
+POST http://localhost:3012/user
+Content-Type: application/json
+
+{
+    "first_name":"Selva",
+    "last_name":"Selva",
+    "email":"selva@gmail.com",
+    "password":"selva@1234"
+}
